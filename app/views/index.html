@@ -14,40 +14,40 @@
   .sticker {
     padding: 0.25em 0.5em 0.25em 0.5em;
     margin-right: 0.5em;
-    border-radius: 5px;  
+    border-radius: 5px;
   }
 
   .status {
     color: white;
     font-weight: 800;
-    border: 2px solid #b22a69;  
+    border: 2px solid #b22a69;
     background: #D53880; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#b22a69, #D53880); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#b22a69, #D53880); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#b22a69, #D53880); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#b22a69, #D53880); /* Standard syntax */ 
+    background: linear-gradient(#b22a69, #D53880); /* Standard syntax */
   }
 
   .construction {
     color: black;
     font-weight: 800;
-    border: 2px solid #ceca00;  
+    border: 2px solid #ceca00;
     background: #ceca00; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#ceca00, #fffa02); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ceca00, #fffa02); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ceca00, #fffa02); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ceca00, #fffa02); /* Standard syntax */ 
+    background: linear-gradient(#ceca00, #fffa02); /* Standard syntax */
   }
 
   .tested {
     color: white;
     font-weight: 800;
-    border: 2px solid #004f2a; 
+    border: 2px solid #004f2a;
     background: #004f2a; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#004f2a, #006435); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#004f2a, #006435); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#004f2a, #006435); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#004f2a, #006435); /* Standard syntax */ 
+    background: linear-gradient(#004f2a, #006435); /* Standard syntax */
   }
 
 </style>
@@ -96,7 +96,7 @@
               {% endif %}
               {% if prototype.stickers.tested %}
                 <span class="sticker tested">
-                  &#x1F44D; tested: 
+                  &#x1F44D; tested:
                   {% for date in prototype.stickers.tested %}
                     {% if not loop.first%}
                       ,
@@ -173,14 +173,14 @@
           <li><a href="/private-beta-26/pl46jh/display_title_w?title_number=&buildname=&addr1=61-63+Mutley+Plain&x=64&y=15">Welsh screen and print summary</a>
           <p style="color:#444;font-size:75%;">31 Jan 2018</p>
           </li>
-          <li><a href="/private-beta-99/create_account_new">create account - easier password creation?</a></li> 
-          <li><a href="rate-limit">rate limiting - search results</a></li> 
-          <li><a href="account">accounts - all the screens / scenarios (wip)</a></li> 
-          <li><a href="re-issue_summary_index">re issuing a summary</a></li> 
+          <li><a href="/private-beta-99/create_account_new">create account - easier password creation?</a></li>
+          <li><a href="rate-limit">rate limiting - search results</a></li>
+          <li><a href="account">accounts - all the screens / scenarios (wip)</a></li>
+          <li><a href="re-issue_summary_index">re issuing a summary</a></li>
           <li><a href="take_away_examples">take summary away / receipt</a></li>
           <!-- <li><a style="color:#444;" href="">title register (to do)</a></li> -->
           <!-- <li><a style="color:#444;" href="">pay reskinning / simplifying (to do)</a></li>  -->
-          <li><a href="summary_accuracy">summary accuracy - this information can change...</a></li>     
+          <li><a href="summary_accuracy">summary accuracy - this information can change...</a></li>
         </ul>
       </div>
 
@@ -208,5 +208,3 @@
 </main>
 
 {% endblock %}
-
-
