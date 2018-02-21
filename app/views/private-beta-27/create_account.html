@@ -1,5 +1,5 @@
-{% extends "./layout/layout.html" %}
-{% from "./includes/back_link.html" import back_link %}
+{% extends "../layout/layout.html" %}
+{% from "../includes/back_link.html" import back_link %}
 
 {% block head_additionals %}
 
@@ -210,7 +210,7 @@
 {% block title %}Create an account{% endblock %}
 
 {% block header_primary %}
-  {{ back_link(title='', prefix='Back', url=path + '/confirm_selection?title_number=' + data.title_number) }}
+  {{ back_link(title='Back', prefix='Back')}}
 {% endblock %}
 
 {% block body %}

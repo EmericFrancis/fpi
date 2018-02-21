@@ -79,6 +79,32 @@ router.get('/sign_out', function(req, res) {
   })
 });
 
+
+router.get('/sign_out', function(req, res) {
+  req.session.isLoggedIn = false;
+
+  req.session.destroy(function() {
+    return res.render(path.join(__dirname, '/signed_out'));
+  })
+});
+
+router.get('/pe12re/sign_out', function(req, res) {
+  req.session.isLoggedIn = false;
+
+  req.session.destroy(function() {
+    return res.render(path.join(__dirname, '/pe12re/signed_out'));
+  })
+});
+
+router.get('/pl46jh/sign_out', function(req, res) {
+  req.session.isLoggedIn = false;
+
+  req.session.destroy(function() {
+    return res.render(path.join(__dirname, '/pl46jh/signed_out'));
+  })
+});
+
+
 router.get('/', function(req, res) {
   res.render(path.join(__dirname, 'start'));
 });
@@ -207,37 +233,10 @@ router.all('/create_account:variant?', function(req, res) {
 /**
  * Password reset forms
  */
-router.all('/reset/:item/:section', function(req, res) {
+router.all('*/reset/:item/:section', function(req, res) {
 
   res.render(path.join(__dirname, 'reset_' + req.params.section), {
     item: req.params.item,
-  });
-
-});
-
-/**
- * Send summary and vat recepits
- */
-router.all('/send/:item/:section', function(req, res) {
-
-  // VAT receipt data
-  var receipt = {
-    date: moment().format('D MMM YYYY'),
-    title_number: req.query.title_number,
-    net: '2.50',
-    vat: '0.50',
-    total: '3.00',
-    address1: 'HM Land Registry',
-    address2: 'Trafalgar house',
-    address3: '1 Bedford Park',
-    address4: 'Croydon',
-    postcode: 'CR0 2AQ',
-    reg_number: 'GB 8888 181 53'
-  }
-
-  res.render(path.join(__dirname, 'send_' + req.params.section), {
-    item: req.params.item,
-    receipt: receipt
   });
 
 });
