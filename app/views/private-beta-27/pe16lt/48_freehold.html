@@ -14,7 +14,7 @@
 {% block title %}About this property{% endblock %}
 
 {% block header_primary %}
-  <a class="back-link" href="" data-back-link>
+  <a class="back-link" href="{{path}}/pe12re/42_list">
     <span class="back-link-destination">Back to information available to buy</span>
   </a>
 {% endblock %}
@@ -36,8 +36,9 @@
         <dt>Address</dt>
         <dd class="bold-medium">
           <div class="address">
-            <span>land and buildings on the south side of Cobden Avenue and the west side of Lincoln Road</span>             
+            <span>48 Chester Road</span>
             <span>Peterborough</span>
+            <span>PE1 6LT</span>
           </div>
         </dd>
 
@@ -83,7 +84,7 @@
       <div class="text">
 
           <h2 class="heading-medium spacing-top-single">The summary will tell you</h2>
-        
+
         <ul class="list list-bullet">
 
             <li>current owner's name and address</li>
@@ -96,15 +97,7 @@
       </div>
 
     </div> <!-- end property text column -->
-
-    <!-- map column -->
-    <div class="column-one-third tablet-column-one-third spacing-bottom-single mobile-spacing-top-hack">
-        <div class="map polygonx" id="map">
-          <p>Your browser must have JavaScript enabled in order to use the map.</p>
-        </div>
-        <p class="font-xxsmall">Use of the pin marker on the map (including the associated coordinates and the link between the address and its location) is subject to <a href="os_terms">Ordnance Survey licence terms and conditions</a></p>
-    </div>
-
+    
   </div> <!-- end row -->
 
 
@@ -143,7 +136,7 @@
 
         <p class="spacing-top-single">
         <!-- <a href="42_list">&lt; Back to information available to buy</a> -->
-          <a class="back-link" href="" data-back-link>
+          <a class="back-link" href="{{path}}/pe12re/42_list">
             <span class="back-link-destination">Back to information available to buy</span>
           </a>
         </p>
