@@ -14,7 +14,7 @@
 {% block title %}Confirm your purchase{% endblock %}
 
 {% block header_primary %}
-  <a class="back-link" href="{{path}}/pe16lt/42_list">
+  <a class="back-link" href="{{path}}/pl40ap/25_list">
     <span class="back-link-destination">Back to information available to buy</span>
   </a>
 {% endblock %}
@@ -51,9 +51,9 @@
         <dt class="spacing-bottom-single">Address</dt>
         <dd class="bold-medium spacing-bottom-single">
           <div class="address">
-            <span>48 Chester Road</span>
-            <span>Peterborough</span>
-            <span>PE1 6LT</span>
+            <span>25 Exeter Street</span>
+            <span>Plymouth</span>
+            <span>PL4 0AP</span>
           </div>
         </dd>
 
@@ -114,16 +114,6 @@
       </div>
 
     </div>
-    <!-- map column -->
-    <div class="column-one-third tablet-column-one-third spacing-bottom-single">
-        <div class="map polygonx" id="map">
-          <p>Your browser must have JavaScript enabled in order to use the map.</p>
-        </div>
-        <p class="font-xxsmall">Use of the pin marker on the map (including the associated coordinates and the link between the address and its location) is subject to <a href="os_terms">Ordnance Survey licence terms and conditions</a></p>
-    </div>
-
-  </div>
-
 
   <!-- pay + help row -->
   <div class="grid-row spacing-top-single">
@@ -132,7 +122,7 @@
 
       <div class="panel panel-simple">
 
-        <form action="{{path}}/pe16lt/worldpay_1_f?title_number={{data.title_number}}" method="POST" novalidate data-clientside-validation="pay_form_validation" data-clientside-validation-no-summary>
+        <form action="{{path}}/pl40ap/worldpay_1_f?title_number={{data.title_number}}" method="POST" novalidate data-clientside-validation="pay_form_validation" data-clientside-validation-no-summary>
 
           <input name="title_number" value="{{data.title_number}}" type="hidden" />
           <input name="email" value="{{data.email}}" type="hidden" />
