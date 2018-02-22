@@ -14,7 +14,7 @@
 {% block title %}Confirm your purchase{% endblock %}
 
 {% block header_primary %}
-  <a class="back-link" href="{{path}}/pe12re/42_list">
+  <a class="back-link" href="{{path}}/pe16lt/42_list">
     <span class="back-link-destination">Back to information available to buy</span>
   </a>
 {% endblock %}
@@ -51,9 +51,9 @@
         <dt class="spacing-bottom-single">Address</dt>
         <dd class="bold-medium spacing-bottom-single">
           <div class="address">
-            <span>{{ data.addr }}</span>
+            <span>48 Chester Road</span>
             <span>Peterborough</span>
-            <span>PE1 2RE</span>
+            <span>PE1 6LT</span>
           </div>
         </dd>
 
@@ -132,7 +132,7 @@
 
       <div class="panel panel-simple">
 
-        <form action="{{path}}/pe12re/worldpay_1_f?title_number={{data.title_number}}" method="POST" novalidate data-clientside-validation="pay_form_validation" data-clientside-validation-no-summary>
+        <form action="{{path}}/pe16lt/worldpay_1_f?title_number={{data.title_number}}" method="POST" novalidate data-clientside-validation="pay_form_validation" data-clientside-validation-no-summary>
 
           <input name="title_number" value="{{data.title_number}}" type="hidden" />
           <input name="email" value="{{data.email}}" type="hidden" />
