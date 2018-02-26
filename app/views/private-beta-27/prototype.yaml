@@ -10,13 +10,12 @@ stickers:
 
 description:
   - iteration of V25, now we've learnt more from real data / written code
-  - ambition = best ever public search
-  - search results are are a list of addresses in that postcode
-  - property address page for every address (each result that is a link)
-
+  
 changelog:
-  - Added PL1 6LT post code adresses 1 - 60 even numbers only
-  - Removed maps toreflect as is service
-  - Added the inset contact information for HMLR on search page
-  - Adeed a second adress for owner of 48 Chester Road
-  - 48 Chester Road only has 1 record which is a Freehold
+  - content updates to start and summary pages (title number and mortgage information)
+  - added HMLR contact details (help with service)
+  - removed maps
+  - password requirement text moved above password entry field
+  - added PL16LT post code (even numbers only 2-60)
+  - added PL40AP post code (odd and even numbers 1-30)
+  - changed PDF ‘download a copy’ to relevant current page
