@@ -1,16 +1,17 @@
-name: results are addresses + page per address
-date: 2017-11-07
+name: UR session 5.03.28
+date: 2018-02-27
 
 stickers:
-  status: Shipped - 1 Dec 2017
+  status:
   # construction: complete, 14-11-17
-  tested:
-
+  tested: 5
 
 
 description:
-  - iteration of V25, now we've learnt more from real data / written code
-  
+  - test current service including assisted digital support
+  - test updated content around mortgage information summary
+  - test 'information available to buy page' when showing only one title
+
 changelog:
   - content updates to start and summary pages (title number and mortgage information)
   - added HMLR contact details (help with service)
